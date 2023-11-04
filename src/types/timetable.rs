@@ -98,7 +98,7 @@ impl Timetable {
         //ADD CONSTRAINTS (enabled ones)
         scheduler.set_constraint(ConstraintType::MaxOnePersonPerShift);
         scheduler.set_constraint(ConstraintType::MinMaxWeekHoursPerPerson(1.0, 12.0));
-        scheduler.set_constraint(ConstraintType::NoConsecutiveShifts);
+        // scheduler.set_constraint(ConstraintType::NoConsecutiveShifts);
 
         //RUN SCHEDULER
         scheduler.schedule();
